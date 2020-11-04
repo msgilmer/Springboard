@@ -1,0 +1,12 @@
+The data for this project is located in the directory 'data' which contains three subdirectories ('seb_pred', 'sed_test', and 'sed_train').
+
+"This Data contains around 25k images of size 150x150 distributed under 6 categories.
+{'buildings' -> 0,
+'forest' -> 1,
+'glacier' -> 2,
+'mountain' -> 3,
+'sea' -> 4,
+'street' -> 5 }" - Puneet Bansal (quote and data from https://www.kaggle.com/puneet6060/intel-image-classification)
+
+The original source for the data is Intel: https://datahack.analyticsvidhya.com
+

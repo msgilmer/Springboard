@@ -1,0 +1,3 @@
+The data for this project is contained in the file cumulative.csv and was collected by the Kepler Space Observatory. The Public Domain dataset contains information on all of their exoplanet candidates throughout the mission's long duration.
+
+I downloaded it from https://www.kaggle.com/nasa/kepler-exoplanet-search-results which also contains information on the meaning of the column names and also provides links to the Kepler's website for more complete information.  

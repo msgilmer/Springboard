@@ -1,0 +1,2 @@
+The data for this project is located in the directory 'Data' which contains two subdirectories ('ETFs' and 'Stocks'). It contains the "full historical daily price and volume data for all US-based stocks and ETFs trading on the NYSE, NASDAQ,and NYSE" - Boris Marjanovic (data and quote from https://www.kaggle.com/borismarjanovic/price-volume-data-for-all-us-stocks-etfs)
+
