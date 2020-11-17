@@ -4,19 +4,14 @@
 import sys
 import json
 
-#json_file = sys.argv[0]
-#table_name = sys.argv[1]
+json_file = sys.argv[1]
+table_name = sys.argv[2]
 
-#with open('author-results.json') as f: 
-# For some, some reason the above causes error
-# Therefore, change the file below and the table
-# name for a different json file.
-with open('author-results.json') as f:
+with open(json_file) as f:
     data = json.load(f) # Getting an error here for some reason
 
 col_names = list(data[0].keys())
-command = "CREATE TABLE IF NOT EXISTS {} (".format('author')
-#command = "CREATE TABLE IF NOT EXISTS {} (".format(table_name)
+command = "CREATE TABLE IF NOT EXISTS {} (".format(table_name)
 command += "\n          {} text PRIMARY KEY,".format(col_names[0])
 for name in col_names[1:-1]:
 
@@ -34,7 +29,7 @@ cur.execute("SELECT name from sqlite_master WHERE type='table'")
 print(cur.fetchall())
 
 # Now load the data
-product_sql = "INSERT INTO {} ({}) VALUES ({})".format('author', ', '.join(col_names), ', '.join(['?'] * len(col_names)))
+product_sql = "INSERT INTO {} ({}) VALUES ({})".format(table_name, ', '.join(col_names), ', '.join(['?'] * len(col_names)))
 for datum in data:
     record = []
     for name in col_names:
